@@ -1,0 +1,8 @@
+node_modules/
+accounting.db
+accounting.db-wal
+accounting.db-shm
+npm-debug.log*
+.env
+.DS_Store
+*.log
