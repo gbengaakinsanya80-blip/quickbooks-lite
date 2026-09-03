@@ -1,0 +1,13 @@
+{
+  "name": "quickbooks-lite",
+  "version": "1.0.0",
+  "description": "Simple accounting system inspired by QuickBooks",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sql.js": "^1.10.0"
+  }
+}
