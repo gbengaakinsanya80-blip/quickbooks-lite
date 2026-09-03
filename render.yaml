@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: quickbooks-lite
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/dashboard
+    autoDeploy: true
+    disk:
+      name: sqlite-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: DATABASE_PATH
+        value: /var/data/accounting.db
